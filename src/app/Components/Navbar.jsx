@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 border shadow-sm sticky top-0">
+    <div className="navbar bg-base-100 border shadow-sm sticky top-0 z-30">
       <div className="navbar-start">
         <a className="btn btn-ghost text-xl">ExpertHub</a>
       </div>
@@ -26,7 +27,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-skin-button-muted hover:bg-skin-button-muted-hover text-skin-base">Login</a>
+        <Link href="/login" className="btn bg-skin-button-muted hover:bg-skin-button-muted-hover text-skin-base">Login</Link>
       </div>
     </div>
   );

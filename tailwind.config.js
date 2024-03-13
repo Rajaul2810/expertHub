@@ -22,6 +22,11 @@ module.exports = {
           'button-muted':'var(--color-button-muted)',
           'button-muted-hover':'var(--color-button-muted-hover)',
         }
+      },
+      borderColor:{
+        skin:{
+          inverted:'var(--color-border-inverted)',
+        }
       }
     },
   },
