@@ -2,7 +2,7 @@
 
 export default function Home() {
   return (
-    <div >
+    <div className=" text-skin">
        <p>Home page</p>
     </div>
   );
