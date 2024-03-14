@@ -8,21 +8,21 @@ const Navbar = () => {
         <a className="btn btn-ghost text-xl">ExpertHub</a>
       </div>
       <div className="navbar-center hidden md:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Home</a>
+        <ul className="menu menu-horizontal px-1 ">
+          <li className="hover:text-skin-inverted">
+            <Link href="/">Home</Link>
           </li>
-          <li>
-            <a>Guider</a>
+          <li className="hover:text-skin-inverted">
+            <Link href="/guider">Guider</Link>
           </li>
-          <li>
-            <a>Event</a>
+          <li className="hover:text-skin-inverted">
+            <Link href="/event">Event</Link>
           </li>
-          <li>
-            <a>About</a>
+          <li className="hover:text-skin-inverted">
+            <Link href="/about">About</Link>
           </li>
-          <li>
-            <a>Contact</a>
+          <li className="hover:text-skin-inverted">
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
