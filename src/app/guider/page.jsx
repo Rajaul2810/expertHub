@@ -2,7 +2,7 @@ import React from 'react'
 
 const Guider = () => {
   return (
-    <div>Guider</div>
+    <section className='max-w-screen-xl mx-auto text-2xl font-bold'> Guider</section>
   )
 }
 
