@@ -2,7 +2,10 @@ import React from 'react'
 
 const Guider = () => {
   return (
-    <div>Guider</div>
+    <div>
+      <p>Guider</p>
+    </div>
+    
   )
 }
 
