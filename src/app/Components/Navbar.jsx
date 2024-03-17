@@ -3,9 +3,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 border shadow-sm sticky top-0 z-30">
+    <div className="navbar bg-base-100 border shadow-sm sticky top-0 z-30 ">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">ExpertHub</a>
+        <a className="btn btn-ghost text-xl">E-Mentor</a>
       </div>
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1 ">
@@ -13,10 +13,10 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </li>
           <li className="hover:text-skin-inverted">
-            <Link href="/guider">Guider</Link>
+            <Link href="/mentors">Mentors</Link>
           </li>
           <li className="hover:text-skin-inverted">
-            <Link href="/event">Event</Link>
+            <Link href="/workshops">Workshops</Link>
           </li>
           <li className="hover:text-skin-inverted">
             <Link href="/about">About</Link>

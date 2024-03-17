@@ -21,3 +21,6 @@
     @apply flex flex-col hover:text-skin-inverted transition-all duration-300 ;
   }
 }
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #06b6d4, #00bcd4);
+}

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Register = () => {
   return (
-    <div className="flex h-screen items-center justify-center bg-[#8EA7E9]/20 p-6 md:p-0">
+    <div className="flex h-screen items-center justify-center bg-slate-100 p-6 md:p-0">
       <div className="flex h-full w-full overflow-hidden rounded-xl shadow-md  md:h-[90%] md:w-[80%] lg:h-[90%]">
         {/* input side  */}
         <div className="flex w-full flex-col justify-center bg-white py-10 lg:w-[60%]">

@@ -23,20 +23,20 @@ const BottomNav = () => {
             <p className=" text-xs text-center">Home</p>
           </div>
         </Link>
-        <Link href="/guider">
+        <Link href="/mentors">
           <div className={`bottomNav ${path=='/guider'? 'text-skin-inverted ':''}`}>
             <p className=" self-center">
               <AiFillCrown />
             </p>
-            <p className="text-xs text-center">Guider</p>
+            <p className="text-xs text-center">Mentors</p>
           </div>
         </Link>
-        <Link href="/event">
+        <Link href="/workshops">
           <div className={`bottomNav ${path=='/event'? 'text-skin-inverted ':''}`}>
             <p className=" self-center">
               <AiFillSetting />
             </p>
-            <p className="text-xs text-center">Event</p>
+            <p className="text-xs text-center">Workshops</p>
           </div>
         </Link>
         <Link href="/about">
