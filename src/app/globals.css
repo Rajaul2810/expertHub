@@ -5,7 +5,7 @@
 @layer base{
   :root{
     --color-text-base:#ffffff;
-    --color-text-muted:#a5f3fc;
+    --color-light-muted:#f1f5f9;
     --color-text-inverted:#06b6d4;
     --color-border-inverted:#06b6d4;
     --color-button-accent:#ffffff;
@@ -21,6 +21,24 @@
     @apply flex flex-col hover:text-skin-inverted transition-all duration-300 ;
   }
 }
-.bg-gradient-to-r {
-  background: linear-gradient(to right, #06b6d4, #00bcd4);
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #f7f4ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #e0cbcb;
+    border-radius: 100vh;
+    border: 2px solid #f6f7ed;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #c0a0b9;
+  }
 }
