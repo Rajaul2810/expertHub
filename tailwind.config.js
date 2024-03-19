@@ -10,7 +10,7 @@ module.exports = {
       textColor:{
         skin:{
           base:'var(--color-text-base)',
-          muted:'var(--color-text-muted)',
+          muted:'var(--color-light-muted)',
           inverted:'var(--color-text-inverted)',
         }
       },
@@ -21,11 +21,17 @@ module.exports = {
           'button-accent-hover':'var(--color-button-accent-hover)',
           'button-muted':'var(--color-button-muted)',
           'button-muted-hover':'var(--color-button-muted-hover)',
+          'text-muted':'var(--color-light-muted)',
         }
       },
       borderColor:{
         skin:{
           inverted:'var(--color-border-inverted)',
+        }
+      },
+      gradientColorStops:{
+        skin:{
+          hue:'var(--color-fill))'
         }
       }
     },

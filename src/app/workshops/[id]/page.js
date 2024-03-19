@@ -48,7 +48,7 @@ const EventDetails = async ({ params }) => {
                 {time}
               </p>
               <p className="flex items-center gap-3">
-                <FaUserGroup className="p-1 size-7  bg-gradient-to-r from-cyan-500 to-teal-400 text-white text-3xl rounded-full " />{" "}
+                <FaUserGroup className="p-1 size-7  bg-gradient-to-r from-cyan-500 to-teal-400 text-white text-3xl rounded-full " />
                 {seats}
               </p>
             </div>

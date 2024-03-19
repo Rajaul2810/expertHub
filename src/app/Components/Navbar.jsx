@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100 border shadow-sm sticky top-0 z-30 ">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">E-Mentor</a>
+        <Link href="/" className="text-xl btn">E-Mentor</Link>
       </div>
       <div className="navbar-center hidden md:flex">
         <ul className="menu menu-horizontal px-1 ">
