@@ -18,7 +18,7 @@ const details = ({ params }) => {
 
     let avgRating = total / reviewCount;
     return (
-        <section className="max-w-screen-xl lg:mx-auto mx-1 md:mx-2  mb-2 md:px-2 md:mb-6 shadow-lg mt-10 rounded-xl">
+        <section className="max-w-screen-xl lg:mx-auto mx-1 md:mx-2  mb-2 md:px-2 lg:p-6 md:mb-6 shadow-lg mt-6 md:mt-10 rounded-xl">
             <section className="lg:flex gap-12 ">
                 <section className="flex flex-col md:flex-row">
                     <div className="w-full h-72 md:w-60 md:h-48 lg:w-44 lg:h-44">

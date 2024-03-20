@@ -16,10 +16,10 @@ const Review = ({ review }) => {
                     ></Image>
                     <div >
                         <h1 className="font-bold">Reviewer Name</h1>
-                        <h1 className="text-gray-600">
+                        <h1 className="text-gray-600 text-center hidden md:flex">
                             <a href="#">{review.email}</a>
                         </h1>
-                        <h1 className="font-semibold ">Rating Given: {review.rating}</h1>
+                        <h1 className="font-medium">Rating Given: {review.rating}</h1>
                         <Rating
                             style={{ maxWidth: 90 }}
                             value={review.rating}
