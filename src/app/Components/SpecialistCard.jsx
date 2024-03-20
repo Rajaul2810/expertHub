@@ -28,7 +28,6 @@ const SpecialistCard = ({ specialist }) => {
                 <div className="pl-4">
                     <h1 className="text-xl font-bold">{specialist.name}</h1>
                     <h1 className="font-medium">Degree</h1>
-                    <h2 className="text-skin-muted">Specialities :</h2>
                     <h1 className="text-skin-inverted font-semibold">
                         {specialist.specialist}
                     </h1>
@@ -36,7 +35,7 @@ const SpecialistCard = ({ specialist }) => {
             </div>
 
             <div className="mt-2  mb-2 px-3">
-                <h1 className="text-skin-muted">Working in :</h1>
+                <h1 className="text-[#9cc7f1]">Working at :</h1>
                 <h1 className="font-medium">
                     Bangabandhu Sheikh Mujib Medical University (BSMMU),
                     Shahbag,Dhaka
@@ -46,12 +45,12 @@ const SpecialistCard = ({ specialist }) => {
                 </h1>
                 <div className="flex justify-between mt-2">
                     <div>
-                        <h1 className="text-skin-muted">Experience: </h1>
+                        <h1 className="text-[#9cc7f1]">Experience: </h1>
                         <h1 className="font-medium">5 years</h1>
                     </div>
                     <div>
                         <div className="flex gap-2">
-                            <h1 className="text-skin-muted">Rating: </h1>
+                            <h1 className="text-[#9cc7f1]">Rating: </h1>
                             <h1 className="font-medium">{avgRating}</h1>
                         </div>
                         <Rating
