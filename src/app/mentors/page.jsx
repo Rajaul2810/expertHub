@@ -5,15 +5,17 @@ import SpecialistCard from "../Components/SpecialistCard";
 import { IoFilter } from "react-icons/io5";
 import { Pagination } from "flowbite-react";
 import { FaSearch } from "react-icons/fa";
+import { Button, Modal } from "flowbite-react";
 
 const Mentors = () => {
     const [displayData, setDisplayData] = useState([]);
     const [totalPages, setTotalPages] = useState(0);
     const [currentPage, setCurrentPage] = useState(1);
     const [totalData, setTotalData] = useState(data);
+    const [openModal, setOpenModal] = useState(false);
 
     useEffect(() => {
-        setTotalPages(Math.ceil(data.length / 6));
+        setTotalPages(Math.ceil(totalData.length / 6));
 
         const startIdx = (currentPage - 1) * 6;
         const endIdx = currentPage * 6;
@@ -26,12 +28,17 @@ const Mentors = () => {
     const valueRef = useRef();
     const handleSubmit = (e) => {
         e.preventDefault();
-      if (valueRef.current.value) {
-          setTotalData(data.filter(dt=>dt.name.toLowerCase().includes(valueRef.current.value.toLowerCase())))
-      }
-      else {
-        setTotalData(data)
-      }
+        if (valueRef.current.value) {
+            setTotalData(
+                data.filter((dt) =>
+                    dt.name
+                        .toLowerCase()
+                        .includes(valueRef.current.value.toLowerCase())
+                )
+            );
+        } else {
+            setTotalData(data);
+        }
     };
 
     return (
@@ -41,11 +48,29 @@ const Mentors = () => {
                 onSubmit={handleSubmit}
                 className="py-2 flex items-center justify-between px-4 md:mx-2 bg-base-200 my-2 rounded-lg"
             >
+                {/* Filter Button */}
                 <div>
-                    <button className="text-3xl md:text-4xl ">
+                    <button
+                        onClick={() => setOpenModal(true)}
+                        className="text-3xl md:text-4xl "
+                    >
                         <IoFilter />
                     </button>
                 </div>
+
+                {/* Modal For Filter by category */}
+                <Modal
+                    dismissible
+                    show={openModal}
+                    onClose={() => setOpenModal(false)}
+                >
+                    <Modal.Header>Filter functionality will be added soon..</Modal.Header>
+                    <Modal.Body>
+                        
+                    </Modal.Body>
+                </Modal>
+
+                {/* Search Input here */}
                 <form className="relative w-60 md:w-96">
                     <input
                         type="text"
@@ -59,11 +84,15 @@ const Mentors = () => {
                 </form>
             </section>
 
+            {/* card showing here */}
+
             <section className="grid mb-2 md:mb-4 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 md:px-4 lg:gap-10 px-2">
                 {displayData.map((dt, idx) => (
                     <SpecialistCard key={idx} specialist={dt} />
                 ))}
             </section>
+
+            {/* Pagination starts here */}
             <div
                 className={`flex mb-6 md:mb-10 justify-center overflow-x-auto sm:justify-center mt-4 ${
                     displayData <= 6 && "hidden"
